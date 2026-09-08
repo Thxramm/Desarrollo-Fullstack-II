@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f7f1e5; /* Fondo beige cálido */
+    color: #2c1a0e;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #3d2419; /* Café oscuro */
+    color: #ffffff;
+    padding: 1.2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 2.2rem;
+}
+
+.logo-text h1 {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.logo-text span {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #d1c2b5;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+}
+
+nav a {
+    color: #e2d7cd;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Botón activo (Terracota) */
+nav a.active {
+    background-color: #a05234; 
+    color: #ffffff;
+}
+
+/* Acciones de usuario (Buscar, Cuenta, Carrito) */
+.header-actions {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.action-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem;
+    color: #e2d7cd;
+    cursor: pointer;
+}
+
+.action-item span {
+    margin-top: 2px;
+}
