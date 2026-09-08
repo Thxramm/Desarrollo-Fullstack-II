@@ -89,7 +89,7 @@ nav a.active {
 .hero {
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
-                      url('https://www.instagram.com/p/C6HI8vyLCoU/');
+                      url('https://images.unsplash.com/photo-1747792607295-ada93d1b320c?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
     height: 460px;
@@ -140,4 +140,121 @@ nav a.active {
 .btn-primary:hover {
     background-color: #833e25;
     transform: translateY(-2px);
+}
+.content-layout {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.sidebar {
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.sidebar h3 {
+    font-size: 1.25rem;
+    color: #3d2419;
+    margin-bottom: 1.2rem;
+    font-family: 'Georgia', serif;
+    font-weight: normal;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 0.8rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #2c1a0e;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.sidebar a:hover {
+    color: #a05234;
+}
+
+.catalog-section {
+    flex-grow: 1;
+}
+
+.catalog-section h2 {
+    font-size: 1.4rem;
+    color: #3d2419;
+    margin-bottom: 1.7rem;
+    font-family: 'Georgia', serif;
+    font-weight: normal;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+}
+
+.book-card {
+    background-color: #ffffff;
+    padding:1.2rem 1rem 1.4rem 1rem;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.book-info h4 {
+    font-size: 0.85rem;
+    color: #2c1a0e;
+    margin-bottom: 0.2rem;
+    font-family: 'Georgia', serif;
+}
+
+.book-info .author {
+    font-size: 0.75rem;
+    color: #777;
+    margin-bottom: 0.4rem;
+}
+
+.book-info .stars {
+    color: #d4a373;
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+
+.book-info .price {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #2c1a0e;
+    margin-bottom: 0.8rem;
+}
+
+.btn-cart {
+    width: 100%;
+    background-color: #a05234;
+    color: #ffffff;
+    border: none;
+    padding: 0.55rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-cart:hover {
+    background-color: #833e25;
 }
