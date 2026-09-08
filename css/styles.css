@@ -7,13 +7,12 @@
 
 body {
     font-family: 'Georgia', serif;
-    background-color: #f7f1e5; /* Fondo beige cálido */
+    background-color: #f7f1e5;
     color: #2c1a0e;
 }
 
-/* ENCABEZADO */
 header {
-    background-color: #3d2419; /* Café oscuro */
+    background-color: #3d2419;
     color: #ffffff;
     padding: 1.2rem 3rem;
     display: flex;
@@ -22,7 +21,6 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -46,7 +44,6 @@ header {
     color: #d1c2b5;
 }
 
-/* Navegación */
 nav ul {
     display: flex;
     list-style: none;
@@ -66,13 +63,11 @@ nav a:hover {
     color: #ffffff;
 }
 
-/* Botón activo (Terracota) */
 nav a.active {
     background-color: #a05234; 
     color: #ffffff;
 }
 
-/* Acciones de usuario (Buscar, Cuenta, Carrito) */
 .header-actions {
     display: flex;
     gap: 1.5rem;
@@ -89,4 +84,60 @@ nav a.active {
 
 .action-item span {
     margin-top: 2px;
+}
+
+.hero {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
+                      url('https://www.instagram.com/p/C6HI8vyLCoU/');
+    background-size: cover;
+    background-position: center;
+    height: 460px;
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-card {
+    background-color: rgba(61, 36, 25, 0.88); 
+    padding: 2.5rem;
+    border-radius: 8px;
+    max-width: 420px;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-card h2 {
+    font-size: 2.2rem;
+    line-height: 1.25;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    font-family: 'Georgia', serif;
+}
+
+.hero-card p {
+    color: #e2d7cd;
+    font-size: 0.95rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.5;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #a05234; 
+    color: #ffffff;
+    padding: 0.75rem 1.6rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #833e25;
+    transform: translateY(-2px);
 }
