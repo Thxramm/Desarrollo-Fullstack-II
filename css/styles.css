@@ -36,7 +36,7 @@ header {
     object-fit: contain; 
     display: block;      
     margin-right: 0.8rem; 
-    filter: brightness(0) invert(1); 
+    filter:  invert(0.1); 
 }
 
 .logo-text h1 {

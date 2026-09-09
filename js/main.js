@@ -25,3 +25,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     inputBusqueda.addEventListener('input', filtrarLibros);
 });
+let contadorCarrito = 0;
+
+document.addEventListener('DOMContentLoaded', () => {
+    const botonesCarrito = document.querySelectorAll('.btn-cart');
+    const cartCountElement = document.getElementById('cart-count');
+
+    botonesCarrito.forEach(boton => {
+        if (boton.tagName === 'BUTTON') {
+            boton.addEventListener('click', (e) => {
+
+                const tarjeta = e.target.closest('.book-card');
+                const titulo = tarjeta ? tarjeta.querySelector('h4').textContent : 'El libro';
+
+                contadorCarrito++;
+
+                if (cartCountElement) {
+                    cartCountElement.textContent = `Carrito (${contadorCarrito})`;
+                }
+
+                alert(`¡"${titulo}" se ha añadido al carrito exitosamente!`);
+            });
+        }
+    });
+});
