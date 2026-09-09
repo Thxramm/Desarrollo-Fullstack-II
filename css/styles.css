@@ -366,3 +366,30 @@ nav a.active {
     border-radius: 4px;
     display: block;
 }
+.badge {
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.badge.admin {
+    background-color: #3d2419;
+    color: #ffffff;
+}
+
+.badge.customer {
+    background-color: #e2d7cd;
+    color: #2c1a0e;
+}
+
+.badge.active {
+    background-color: #2e7d32;
+    color: #ffffff;
+}
+
+.badge.inactive {
+    background-color: #757575;
+    color: #ffffff;
+}

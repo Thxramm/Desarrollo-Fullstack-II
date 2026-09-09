@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Admin - Mantenedor de Usuarios</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="logo-icon">⚙️</span>
+            <div class="logo-text">
+                <h1>PANEL ADMIN</h1>
+                <span>EL RINCÓN DEL LECTOR</span>
+            </div>
+        </div>
+        <div class="header-actions">
+            <a href="../index.html" class="btn-primary" style="text-decoration: none;">Ver Tienda</a>
+        </div>
+    </header>
+
+    <div class="admin-container">
+        <aside class="admin-sidebar">
+            <nav>
+                <ul class="admin-menu">
+                    <li><a href="admin-productos.html"> Mantenedor Libros</a></li>
+                    <li><a href="admin-usuarios.html" class="active"> Mantenedor Usuarios</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="admin-content">
+            <div class="admin-header-actions">
+                <h2>Gestión de Usuarios</h2>
+                <button class="btn-primary">+ Agregar Nuevo Usuario</button>
+            </div>
+
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Correo Electrónico</th>
+                        <th>Rol</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1</td>
+                        <td>Camila Bravo</td>
+                        <td>camila.bravo3@gmail.com</td>
+                        <td><span class="badge admin">Administrador</span></td>
+                        <td><span class="badge active">Activo</span></td>
+                        <td>
+                            <button class="btn-action edit">Editar</button>
+                            <button class="btn-action delete">Desactivar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#2</td>
+                        <td>Millaray Gómez</td>
+                        <td>gomezmillaray@gmail.com</td>
+                        <td><span class="badge customer">Cliente</span></td>
+                        <td><span class="badge active">Activo</span></td>
+                        <td>
+                            <button class="btn-action edit">Editar</button>
+                            <button class="btn-action delete">Desactivar</button>
+                        </td>
+                    </tr>                    <tr>
+                        <td>#3</td>
+                        <td>Javier Torres</td>
+                        <td>jav.torres@gmail.com</td>
+                        <td><span class="badge customer">Cliente</span></td>
+                        <td><span class="badge active">Activo</span></td>
+                        <td>
+                            <button class="btn-action edit">Editar</button>
+                            <button class="btn-action delete">Desactivar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#4</td>
+                        <td>Ana Silva</td>
+                        <td>ana.s.m29@gmail.com</td>
+                        <td><span class="badge customer">Cliente</span></td>
+                        <td><span class="badge inactive">Inactivo</span></td>
+                        <td>
+                            <button class="btn-action edit">Editar</button>
+                            <button class="btn-action delete">Activar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+</body>
+</html>
