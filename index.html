@@ -10,6 +10,7 @@
 
     <header>
         <div class="logo">
+            <img src="img/logo.png" alt="Logo" class="logo-img">
             <div class="logo-text">
                 <h1>EL RINCÓN</h1>
                 <span>DEL LECTOR</span>
@@ -28,88 +29,94 @@
         </nav>
 
         <div class="header-actions">
-            <div class="action-item"> <span>Buscar</span></div>
+            <form id="formBuscador" class="action-item search-box">
+                <input type="text" id="inputBusqueda" placeholder="Buscar libro o autor...">
+                <button type="submit" id="btnBuscar">Buscar</button>
+            </form>
+
             <div class="action-item"> <span>Cuenta</span></div>
             <div class="action-item"> <span>Carrito</span></div>
         </div>
     </header>
 
     <main>
-        <main>
-    <section class="hero">
-        <div class="hero-card">
-            <h2>Descubre Historias<br>Que Enamoran</h2>
-            <p>Explora nuestra selección de libros para tardes acogedoras.</p>
-            <a href="vistas/productos.html" class="btn-primary">Ver Catálogo</a>
+        <section class="hero">
+            <div class="hero-card">
+                <h2>Descubre Historias<br>Que Enamoran</h2>
+                <p>Explora nuestra selección de libros para tardes acogedoras.</p>
+                <a href="vistas/productos.html" class="btn-primary">Ver Catálogo</a>
+            </div>
+        </section>
+
+        <div class="content-layout">
+            <aside class="sidebar">
+                <h3>Categorías Populares</h3>
+                <ul>
+                    <li><a href="#">Ficción</a></li>
+                    <li><a href="#">Misterio</a></li>
+                    <li><a href="#">Historia</a></li>
+                    <li><a href="#">Fantasía</a></li>
+                    <li><a href="#">Biografías</a></li>
+                    <li><a href="#">Romance</a></li>
+                </ul>
+            </aside>
+
+            <section class="catalog-section">
+                <h2>Nuestras Recomendaciones</h2>
+                
+                <div class="books-grid">
+                    <article class="book-card">
+                        <img src="https://images.cdn1.buscalibre.com/fit-in/660x660/b4/64/b464348c99748d2fd1441256b1f13cee.jpg" alt="Asesinato para principiantes">
+                        <div class="book-info">
+                            <h4>Asesinato para principiantes</h4>
+                            <p class="author">Holly Jackson</p>
+                            <div class="stars">★★★★★</div>
+                            <p class="price">$23.990</p>
+                            <button class="btn-cart">Añadir al Carrito</button>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <img src="https://images.cdn3.buscalibre.com/fit-in/660x660/d3/69/d369668796a28f1bba57541e9aaad870.jpg" alt="Alas de sangre">
+                        <div class="book-info">
+                            <h4>Alas de sangre</h4>
+                            <p class="author">Rebecca Yarros</p>
+                            <div class="stars">★★★★★</div>
+                            <p class="price">$26.990</p>
+                            <button class="btn-cart">Añadir al Carrito</button>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <img src="https://images.cdn3.buscalibre.com/fit-in/660x660/d9/62/d96221959b61685e9ec003f0055f3779.jpg" alt="Una corte de niebla y furia">
+                        <div class="book-info">
+                            <h4>Una corte de niebla y furia (acotar 2)</h4>
+                            <p class="author">Sarah J. Maas</p>
+                            <div class="stars">★★★★★</div>
+                            <p class="price">$19.990</p>
+                            <button class="btn-cart">Añadir al Carrito</button>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <img src="https://images.cdn3.buscalibre.com/fit-in/660x660/c2/3c/c23c70613dc1a56084d04b3ce04cc890.jpg" alt="Heartless">
+                        <div class="book-info">
+                            <h4>Heartless</h4>
+                            <p class="author">Marissa Meyer</p>
+                            <div class="stars">★★★★★</div>
+                            <p class="price">$12.990</p>
+                            <button class="btn-cart">Añadir al Carrito</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </div>
-    </section>
-    <div class="content-layout">
-    <aside class="sidebar">
-        <h3>Categorías Populares</h3>
-        <ul>
-            <li><a href="#">Ficción</a></li>
-            <li><a href="#">Misterio</a></li>
-            <li><a href="#">Historia</a></li>
-            <li><a href="#">Fantasía</a></li>
-            <li><a href="#">Biografías</a></li>
-            <li><a href="#">Romance</a></li>
-        </ul>
-    </aside>
-
-    <section class="catalog-section">
-        <h2>Nuestras Recomendaciones</h2>
-        <div class="books-grid">
-            <article class="book-card">
-                <img src="https://images.cdn1.buscalibre.com/fit-in/660x660/b4/64/b464348c99748d2fd1441256b1f13cee.jpg">
-                <div class="book-info">
-                    <h4>Asesinato para principiantes</h4>
-                    <p class="author">Holly Jackson</p>
-                    <div class="stars">★★★★★</div>
-                    <p class="price">$23.990</p>
-                    <button class="btn-cart">Añadir al Carrito</button>
-                </div>
-            </article>
-
-            <article class="book-card">
-                <img src="https://images.cdn3.buscalibre.com/fit-in/660x660/d3/69/d369668796a28f1bba57541e9aaad870.jpg">
-                <div class="book-info">
-                    <h4>Alas de sangre</h4>
-                    <p class="author">Rebecca Yarros</p>
-                    <div class="stars">★★★★★</div>
-                    <p class="price">$26.990</p>
-                    <button class="btn-cart">Añadir al Carrito</button>
-                </div>
-            </article>
-
-            <article class="book-card">
-                <img src="https://images.cdn3.buscalibre.com/fit-in/660x660/d9/62/d96221959b61685e9ec003f0055f3779.jpg">
-                <div class="book-info">
-                    <h4>Una corte de niebla y furia (acotar 2)</h4>
-                    <p class="author">Sarah J. Maas</p>
-                    <div class="stars">★★★★★</div>
-                    <p class="price">$19.990</p>
-                    <button class="btn-cart">Añadir al Carrito</button>
-                </div>
-            </article>
-
-            <article class="book-card">
-                <img src="https://images.cdn3.buscalibre.com/fit-in/660x660/c2/3c/c23c70613dc1a56084d04b3ce04cc890.jpg">
-                <div class="book-info">
-                    <h4>Heartless</h4>
-                    <p class="author">Marissa Meyer</p>
-                    <div class="stars">★★★★★</div>
-                    <p class="price">$12.990</p>
-                    <button class="btn-cart">Añadir al Carrito</button>
-                </div>
-            </article>
-        </div>
-    </section>
-</div>
-</main>
     </main>
 
     <footer>
         <p>© 2026 El Rincón del Lector</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -29,6 +28,15 @@ header {
 
 .logo-icon {
     font-size: 2.2rem;
+}
+
+.logo-img {
+    width: 36px;        
+    height: 36px;        
+    object-fit: contain; 
+    display: block;      
+    margin-right: 0.8rem; 
+    filter: brightness(0) invert(1); 
 }
 
 .logo-text h1 {
@@ -68,8 +76,10 @@ nav a.active {
     color: #ffffff;
 }
 
+
 .header-actions {
     display: flex;
+    align-items: center;
     gap: 1.5rem;
 }
 
@@ -84,6 +94,43 @@ nav a.active {
 
 .action-item span {
     margin-top: 2px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.search-box input {
+    padding: 0.45rem 0.8rem;
+    border: 1px solid #a05234;
+    border-radius: 4px;
+    background-color: #f7f1e5;
+    color: #2c1a0e;
+    font-size: 0.85rem;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #8c7a6b;
+}
+
+.search-box button {
+    background-color: #a05234;
+    color: #ffffff;
+    border: none;
+    padding: 0.45rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.search-box button:hover {
+    background-color: #833e25;
 }
 
 .hero {
@@ -141,6 +188,7 @@ nav a.active {
     background-color: #833e25;
     transform: translateY(-2px);
 }
+
 .content-layout {
     display: flex;
     gap: 2.5rem;
@@ -199,7 +247,7 @@ nav a.active {
 
 .book-card {
     background-color: #ffffff;
-    padding:1.2rem 1rem 1.4rem 1rem;
+    padding: 1.2rem 1rem 1.4rem 1rem;
     border-radius: 6px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -210,7 +258,7 @@ nav a.active {
 
 .book-card img {
     width: 100%;             
-    max-width: 160px;      
+    max-width: 160px;       
     height: 220px;          
     object-fit: cover;       
     margin: 0 auto 0.8rem;   
@@ -260,6 +308,7 @@ nav a.active {
 .btn-cart:hover {
     background-color: #833e25;
 }
+
 .admin-container {
     display: flex;
     min-height: calc(100vh - 80px);
@@ -359,6 +408,7 @@ nav a.active {
     background-color: #b71c1c;
     color: #ffffff;
 }
+
 .admin-table img {
     width: 75px !important;
     height: 100px !important;
@@ -366,6 +416,7 @@ nav a.active {
     border-radius: 4px;
     display: block;
 }
+
 .badge {
     padding: 0.25rem 0.6rem;
     border-radius: 12px;
