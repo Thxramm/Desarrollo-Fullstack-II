@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - El Rincón del Lector</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+<div class="logo">
+<div class="logo-text">
+<h1>EL RINCÓN</h1>
+<span>DEL LECTOR</span>
+</div>
+</div>
+
+<nav>
+<ul>
+<li><a href="../index.html">Inicio</a></li>
+<li><a href="novedades.html">Novedades</a></li>
+<li><a href="categorias.html">Categorías</a></li>
+<li><a href="autores.html">Autores</a></li>
+<li><a href="blogs.html" class="active">Blog</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+
+<div class="header-actions">
+<div class="action-item"><span>Buscar</span></div>
+<div class="action-item"><span>Cuenta</span></div>
+<div class="action-item"><span>Carrito (3)</span></div>
+</div>
+</header>
+
+<main>
+<section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1747792607295-ada93d1b320c?q=80&w=1032&auto=format&fit=crop');">
+<div class="hero-card">
+<h2>Nuestro Blog<br>Literario</h2>
+<p>Opiniones, experiencias y comentarios de nuestra comunidad de lectores.</p>
+</div>
+</section>
+
+<!-- Contenedor Principal con la Sección de Comentarios -->
+<div class="content-layout" style="padding: 0 4rem; display: flex; flex-direction: column; gap: 3rem;">
+
+<!-- SECCIÓN DE COMENTARIOS DE LA COMUNIDAD -->
+<section style="background: #fff5e8; padding: 2.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-top: 2rem;">
+<h2 style="color: #2c1a0e; margin-bottom: 1.5rem; text-align: center;">Comentarios de la Comunidad</h2>
+
+<!-- Lista de comentarios existentes -->
+<div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2.5rem;">
+
+<!-- Comentario 1 -->
+<div style="background: #ffffff; padding: 1.5rem; border-radius: 6px; border: 1px solid #d3b89d;">
+<div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+<strong style="color: #2c1a0e;">María Paz Faure</strong>
+<span style="color: #8c6d53; font-size: 0.85rem;">Hace 2 días</span>
+</div>
+<div style="color: #f39c12; font-size: 0.9rem; margin-bottom: 0.5rem;">★★★★★</div>
+<p style="color: #5a3d2b; font-size: 0.95rem; line-height: 1.5; margin: 0;">
+Me encantó la página, Compré un par de libros y después fui a retirarlos a la tienda del mall. La atención fue súper buena y tienen demasiados libros para elegir, me costó decidirme full recomendado, de todas maneras volvería a comprar.
+</p>
+</div>
+
+<!-- Comentario 2 -->
+<div style="background: #ffffff; padding: 1.5rem; border-radius: 6px; border: 1px solid #d3b89d;">
+<div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+<strong style="color: #2c1a0e;">Thiare Gómez</strong>
+<span style="color: #8c6d53; font-size: 0.85rem;">Hace 5 días</span>
+</div>
+<div style="color: #f39c12; font-size: 0.9rem; margin-bottom: 0.5rem;">★★★★★</div>
+<p style="color: #5a3d2b; font-size: 0.95rem; line-height: 1.5; margin: 0;">
+Me encantó la página, es súper linda y fácil de usar. Fui a la tienda y terminé llevándome varios libros más que ni conocía. Tienen muchísima variedad, da gusto ir y mirar todo con calma ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა
+</p>
+</div>
+
+<!-- Comentario 3 -->
+<div style="background: #ffffff; padding: 1.5rem; border-radius: 6px; border: 1px solid #d3b89d;">
+<div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+<strong style="color: #2c1a0e;">Sana</strong>
+<span style="color: #8c6d53; font-size: 0.85rem;">Hace 1 semana</span>
+</div>
+<div style="color: #f39c12; font-size: 0.9rem; margin-bottom: 0.5rem;">★★★★★</div>
+<p style="color: #5a3d2b; font-size: 0.95rem; line-height: 1.5; margin: 0;">
+Recomiendo totalmente la página. Todo llegó súper rápido y fui a retirarlo al módulo del Mall Plaza Vespucio. Todo súper bien y la atención muy buena. Además tienen muchísima variedad de libros para mirar y vitrinear en persona. Definitivamente volvería a comprar.
+</p>
+</div>
+
+</div>
+
+<!-- Formulario para dejar un nuevo comentario -->
+<div style="background: #fff; padding: 2rem; border-radius: 8px; border: 1px solid #d3b89d;">
+<h3 style="color: #2c1a0e; margin-bottom: 1rem;">Deja tu comentario</h3>
+<form action="#" method="POST">
+<div style="margin-bottom: 1rem;">
+<label style="display: block; margin-bottom: 0.5rem; color: #3d2419; font-weight: bold;">Tu Nombre</label>
+<input type="text" placeholder="Ej. Jungkook" style="width: 100%; padding: 0.8rem; border: 1px solid #d3b89d; border-radius: 4px; background: #fff;">
+</div>
+<div style="margin-bottom: 1rem;">
+<label style="display: block; margin-bottom: 0.5rem; color: #3d2419; font-weight: bold;">Tu Comentario / Experiencia</label>
+<textarea rows="4" placeholder="Cuéntanos qué te pareció la página o tu visita a la tienda..." style="width: 100%; padding: 0.8rem; border: 1px solid #d3b89d; border-radius: 4px; background: #fff;"></textarea>
+</div>
+<button type="submit" class="btn-cart" style="padding: 0.8rem 2rem; cursor: pointer;">Publicar Comentario</button>
+</form>
+</div>
+
+</section>
+
+</div>
+</main>
+
+<footer>
+<p style="text-align: center; padding: 3rem; color: #3d2419;">© 2026 El Rincón del Lector</p>
+</footer>
+</body>
+</html>
+
